@@ -123,6 +123,9 @@
       </div>
 
       <form id="supportForm">
+        <!-- ⚠️ Вставь сюда свой access key с web3forms.com -->
+        <input type="hidden" name="access_key" value="1e231d11-5685-4e63-a0f8-79d81760f4e3">
+        <input type="hidden" name="from_name" value="MegaStore Support — заявка с сайта">
         <div class="row2">
           <div class="field">
             <label for="f-name">Имя</label>
@@ -155,7 +158,7 @@
 
         <div class="field">
           <label for="f-subject">Тема</label>
-          <input id="f-subject" name="subject" type="text" placeholder="Коротко о проблеме">
+          <input id="f-subject" name="topic" type="text" placeholder="Коротко о проблеме">
         </div>
 
         <div class="field">
@@ -165,8 +168,8 @@
 
         <div class="submit-row">
           <button type="submit">Отправить обращение</button>
-          <p class="fallback-note">Нажав «отправить», вы откроете свою почтовую программу с готовым письмом. Если ничего не открылось, напишите нам напрямую на <a href="mailto:support@megastore.example" id="fallbackLink" class="mono">support@megastore.example</a>.</p>
-          <p class="status-msg" id="statusMsg">Открываем почтовый клиент…</p>
+          <p class="fallback-note">Письмо уйдёт автоматически — почтовый клиент открывать не нужно. Если что-то пойдёт не так, напишите нам напрямую на <a href="mailto:support@megastore.example" id="fallbackLink" class="mono">support@megastore.example</a>.</p>
+          <p class="status-msg" id="statusMsg"></p>
         </div>
       </form>
     </div>
@@ -178,6 +181,7 @@
       <div>Бланк формируется автоматически и не сохраняется — это просто номер для переписки</div>
     </div>
   </footer>
+
 
 <script src="js/script.js"></script>
 </body>
