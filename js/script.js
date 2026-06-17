@@ -53,7 +53,7 @@
       }
     } catch (err) {
       statusMsg.style.color = '#E2604A';
-      statusMsg.textContent = `Не получилось отправить автоматически. Напишите нам на ${SUPPORT_EMAIL} напрямую.`;
+      statusMsg.textContent = `Не получилось отправить автоматически.`;
     } finally {
       submitBtn.disabled = false;
       submitBtn.textContent = 'Отправить обращение';
